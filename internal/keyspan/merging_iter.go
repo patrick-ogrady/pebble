@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/internal/manifest"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/internal/manifest"
 )
 
 // TODO(jackson): Consider implementing an optimization to seek lower levels

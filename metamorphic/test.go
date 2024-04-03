@@ -12,9 +12,9 @@ import (
 	"strings"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/vfs"
-	"github.com/cockroachdb/pebble/vfs/errorfs"
+	"github.com/patrick-ogrady/pebble"
+	"github.com/patrick-ogrady/pebble/vfs"
+	"github.com/patrick-ogrady/pebble/vfs/errorfs"
 )
 
 type test struct {

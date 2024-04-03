@@ -8,10 +8,10 @@ import (
 	"context"
 	"io"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/sharedcache"
-	"github.com/cockroachdb/pebble/objstorage/remote"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/objstorage"
+	"github.com/patrick-ogrady/pebble/objstorage/objstorageprovider/sharedcache"
+	"github.com/patrick-ogrady/pebble/objstorage/remote"
 )
 
 const remoteMaxReadaheadSize = 1024 * 1024 /* 1MB */

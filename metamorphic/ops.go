@@ -14,15 +14,15 @@ import (
 	"strings"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/private"
-	"github.com/cockroachdb/pebble/internal/testkeys"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider"
-	"github.com/cockroachdb/pebble/sstable"
-	"github.com/cockroachdb/pebble/vfs"
-	"github.com/cockroachdb/pebble/vfs/errorfs"
+	"github.com/patrick-ogrady/pebble"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/keyspan"
+	"github.com/patrick-ogrady/pebble/internal/private"
+	"github.com/patrick-ogrady/pebble/internal/testkeys"
+	"github.com/patrick-ogrady/pebble/objstorage/objstorageprovider"
+	"github.com/patrick-ogrady/pebble/sstable"
+	"github.com/patrick-ogrady/pebble/vfs"
+	"github.com/patrick-ogrady/pebble/vfs/errorfs"
 )
 
 // op defines the interface for a single operation, such as creating a batch,
@@ -108,7 +108,7 @@ func (o *checkpointOp) run(t *test, h historyRecorder) {
 	// by setting the weight that generator.go uses to zero, or similar.
 	// But IIUC the ops are shared for ALL the metamorphic test runs, so
 	// not sure how to do that easily:
-	// https://github.com/cockroachdb/pebble/blob/master/metamorphic/meta.go#L177
+	// https://github.com/patrick-ogrady/pebble/blob/master/metamorphic/meta.go#L177
 	if t.testOpts.sharedStorageEnabled {
 		h.Recordf("%s // %v", o, nil)
 		return

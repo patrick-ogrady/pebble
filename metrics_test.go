@@ -12,9 +12,9 @@ import (
 	"testing"
 
 	"github.com/cockroachdb/datadriven"
-	"github.com/cockroachdb/pebble/internal/humanize"
-	"github.com/cockroachdb/pebble/internal/testkeys"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/patrick-ogrady/pebble/internal/humanize"
+	"github.com/patrick-ogrady/pebble/internal/testkeys"
+	"github.com/patrick-ogrady/pebble/vfs"
 	"github.com/cockroachdb/redact"
 	"github.com/stretchr/testify/require"
 )

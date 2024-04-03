@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/cockroachdb/pebble/internal/rate"
+	"github.com/patrick-ogrady/pebble/internal/rate"
 	"golang.org/x/exp/rand"
 )
 

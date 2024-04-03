@@ -9,10 +9,10 @@ import (
 	"os"
 
 	"github.com/cockroachdb/errors/oserror"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/record"
-	"github.com/cockroachdb/pebble/vfs"
-	"github.com/cockroachdb/pebble/vfs/atomicfs"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/record"
+	"github.com/patrick-ogrady/pebble/vfs"
+	"github.com/patrick-ogrady/pebble/vfs/atomicfs"
 )
 
 // checkpointOptions hold the optional parameters to construct checkpoint

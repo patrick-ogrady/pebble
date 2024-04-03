@@ -7,8 +7,8 @@ package sstable
 import (
 	"math"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/testkeys"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/testkeys"
 )
 
 // Code in this file contains utils for testing. It implements interval block

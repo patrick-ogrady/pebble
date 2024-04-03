@@ -7,8 +7,8 @@ package objstorageprovider
 import (
 	"fmt"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/objstorage"
 )
 
 // remoteObjectName returns the name of an object on remote storage.

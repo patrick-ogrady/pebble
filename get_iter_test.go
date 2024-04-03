@@ -10,10 +10,10 @@ import (
 	"testing"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/internal/testkeys"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/keyspan"
+	"github.com/patrick-ogrady/pebble/internal/manifest"
+	"github.com/patrick-ogrady/pebble/internal/testkeys"
 )
 
 func TestGetIter(t *testing.T) {

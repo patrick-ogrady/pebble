@@ -6,7 +6,7 @@ package sstable
 
 import (
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/cache"
+	"github.com/patrick-ogrady/pebble/internal/cache"
 )
 
 // A bufferHandle is a handle to manually-managed memory. The handle may point

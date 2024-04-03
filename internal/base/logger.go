@@ -13,7 +13,7 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/cockroachdb/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
 )
 
 // Logger defines an interface for writing log messages.

@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/cockroachdb/pebble/bloom"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage"
+	"github.com/patrick-ogrady/pebble/bloom"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/objstorage"
 	"github.com/stretchr/testify/require"
 )
 

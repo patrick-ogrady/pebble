@@ -22,15 +22,15 @@ import (
 
 	"github.com/cockroachdb/datadriven"
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/cache"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider"
-	"github.com/cockroachdb/pebble/objstorage/remote"
-	"github.com/cockroachdb/pebble/vfs"
-	"github.com/cockroachdb/pebble/vfs/atomicfs"
-	"github.com/cockroachdb/pebble/vfs/errorfs"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/cache"
+	"github.com/patrick-ogrady/pebble/internal/manifest"
+	"github.com/patrick-ogrady/pebble/objstorage"
+	"github.com/patrick-ogrady/pebble/objstorage/objstorageprovider"
+	"github.com/patrick-ogrady/pebble/objstorage/remote"
+	"github.com/patrick-ogrady/pebble/vfs"
+	"github.com/patrick-ogrady/pebble/vfs/atomicfs"
+	"github.com/patrick-ogrady/pebble/vfs/errorfs"
 	"github.com/cockroachdb/redact"
 	"github.com/kr/pretty"
 	"github.com/stretchr/testify/require"
@@ -613,7 +613,7 @@ func TestOpenWALReplay(t *testing.T) {
 	}
 }
 
-// Reproduction for https://github.com/cockroachdb/pebble/issues/2234.
+// Reproduction for https://github.com/patrick-ogrady/pebble/issues/2234.
 func TestWALReplaySequenceNumBug(t *testing.T) {
 	mem := vfs.NewMem()
 	d, err := Open("", testingRandomized(t, &Options{

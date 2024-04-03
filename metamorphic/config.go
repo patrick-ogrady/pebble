@@ -4,7 +4,7 @@
 
 package metamorphic
 
-import "github.com/cockroachdb/pebble/internal/randvar"
+import "github.com/patrick-ogrady/pebble/internal/randvar"
 
 type opType int
 

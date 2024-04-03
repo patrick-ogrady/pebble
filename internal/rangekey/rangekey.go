@@ -53,8 +53,8 @@ import (
 	"encoding/binary"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/keyspan"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/keyspan"
 )
 
 // Encode takes a Span containing only range keys. It invokes the provided

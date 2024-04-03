@@ -5,9 +5,9 @@
 package invalidating
 
 import (
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/fastrand"
-	"github.com/cockroachdb/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/fastrand"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
 )
 
 // MaybeWrapIfInvariants wraps some iterators with an invalidating iterator.

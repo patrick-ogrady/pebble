@@ -9,11 +9,11 @@ import (
 	"fmt"
 	"runtime/debug"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/sstable"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/internal/keyspan"
+	"github.com/patrick-ogrady/pebble/internal/manifest"
+	"github.com/patrick-ogrady/pebble/sstable"
 )
 
 // tableNewIters creates a new point and range-del iterator for the given file

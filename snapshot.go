@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/rangekey"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/rangekey"
 )
 
 // ErrSnapshotExcised is returned from WaitForFileOnlySnapshot if an excise

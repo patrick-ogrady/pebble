@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cockroachdb/pebble/internal/metamorphic/metaflags"
-	"github.com/cockroachdb/pebble/metamorphic"
+	"github.com/patrick-ogrady/pebble/internal/metamorphic/metaflags"
+	"github.com/patrick-ogrady/pebble/metamorphic"
 )
 
 // TODO(peter):

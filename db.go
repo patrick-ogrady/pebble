@@ -3,7 +3,7 @@
 // the LICENSE file.
 
 // Package pebble provides an ordered key/value store.
-package pebble // import "github.com/cockroachdb/pebble"
+package pebble // import "github.com/patrick-ogrady/pebble"
 
 import (
 	"context"
@@ -16,20 +16,20 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/arenaskl"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invalidating"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/internal/manual"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/remote"
-	"github.com/cockroachdb/pebble/rangekey"
-	"github.com/cockroachdb/pebble/record"
-	"github.com/cockroachdb/pebble/sstable"
-	"github.com/cockroachdb/pebble/vfs"
-	"github.com/cockroachdb/pebble/vfs/atomicfs"
+	"github.com/patrick-ogrady/pebble/internal/arenaskl"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/invalidating"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/internal/keyspan"
+	"github.com/patrick-ogrady/pebble/internal/manifest"
+	"github.com/patrick-ogrady/pebble/internal/manual"
+	"github.com/patrick-ogrady/pebble/objstorage"
+	"github.com/patrick-ogrady/pebble/objstorage/remote"
+	"github.com/patrick-ogrady/pebble/rangekey"
+	"github.com/patrick-ogrady/pebble/record"
+	"github.com/patrick-ogrady/pebble/sstable"
+	"github.com/patrick-ogrady/pebble/vfs"
+	"github.com/patrick-ogrady/pebble/vfs/atomicfs"
 	"github.com/cockroachdb/tokenbucket"
 	"github.com/prometheus/client_golang/prometheus"
 )

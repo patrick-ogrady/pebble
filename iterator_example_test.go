@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/patrick-ogrady/pebble"
+	"github.com/patrick-ogrady/pebble/vfs"
 )
 
 func ExampleIterator() {

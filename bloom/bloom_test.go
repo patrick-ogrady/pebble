@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cockroachdb/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/base"
 	"github.com/stretchr/testify/require"
 )
 

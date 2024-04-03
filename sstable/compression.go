@@ -8,8 +8,8 @@ import (
 	"encoding/binary"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/cache"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/cache"
 	"github.com/golang/snappy"
 )
 

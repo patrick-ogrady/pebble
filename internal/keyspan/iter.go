@@ -5,8 +5,8 @@
 package keyspan
 
 import (
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/manifest"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/manifest"
 )
 
 // FragmentIterator defines an iterator interface over spans. The spans

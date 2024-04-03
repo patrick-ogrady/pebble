@@ -8,8 +8,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/objiotracing"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/objstorage/objstorageprovider/objiotracing"
 )
 
 type twoLevelIterator struct {
@@ -364,7 +364,7 @@ func (i *twoLevelIterator) SeekGE(
 		}
 		// Else flags.TrySeekUsingNext(). The i.exhaustedBounds is important to
 		// preserve for singleLevelIterator, and twoLevelIterator.skipForward. See
-		// bug https://github.com/cockroachdb/pebble/issues/2036.
+		// bug https://github.com/patrick-ogrady/pebble/issues/2036.
 	}
 
 	if !dontSeekWithinSingleLevelIter {
@@ -551,7 +551,7 @@ func (i *twoLevelIterator) SeekPrefixGE(
 		}
 		// Else flags.TrySeekUsingNext(). The i.exhaustedBounds is important to
 		// preserve for singleLevelIterator, and twoLevelIterator.skipForward. See
-		// bug https://github.com/cockroachdb/pebble/issues/2036.
+		// bug https://github.com/patrick-ogrady/pebble/issues/2036.
 	}
 
 	if !dontSeekWithinSingleLevelIter {

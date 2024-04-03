@@ -11,7 +11,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/patrick-ogrady/pebble/vfs"
 	"github.com/stretchr/testify/require"
 )
 

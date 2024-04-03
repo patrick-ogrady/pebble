@@ -13,7 +13,7 @@ import (
 	"strings"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble"
+	"github.com/patrick-ogrady/pebble"
 )
 
 type methodInfo struct {

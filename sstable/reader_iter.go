@@ -9,8 +9,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
 )
 
 // Iterator iterates over an entire table of data.

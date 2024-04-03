@@ -16,19 +16,19 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invalidating"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/internal/private"
-	"github.com/cockroachdb/pebble/internal/rangedel"
-	"github.com/cockroachdb/pebble/internal/rangekey"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/objiotracing"
-	"github.com/cockroachdb/pebble/objstorage/remote"
-	"github.com/cockroachdb/pebble/sstable"
-	"github.com/cockroachdb/pebble/vfs"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/invalidating"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/internal/keyspan"
+	"github.com/patrick-ogrady/pebble/internal/manifest"
+	"github.com/patrick-ogrady/pebble/internal/private"
+	"github.com/patrick-ogrady/pebble/internal/rangedel"
+	"github.com/patrick-ogrady/pebble/internal/rangekey"
+	"github.com/patrick-ogrady/pebble/objstorage"
+	"github.com/patrick-ogrady/pebble/objstorage/objstorageprovider/objiotracing"
+	"github.com/patrick-ogrady/pebble/objstorage/remote"
+	"github.com/patrick-ogrady/pebble/sstable"
+	"github.com/patrick-ogrady/pebble/vfs"
 	"golang.org/x/exp/constraints"
 )
 
@@ -2176,7 +2176,7 @@ func (d *DB) flush1() (bytesFlushed uint64, err error) {
 				// been set yet. So, we directly use the FileNum. Since these
 				// files were generated as compaction outputs, these must be
 				// physical files on disk. This property might not hold once
-				// https://github.com/cockroachdb/pebble/issues/389 is
+				// https://github.com/patrick-ogrady/pebble/issues/389 is
 				// implemented if #389 creates virtual sstables as output files.
 				d.mu.versions.obsoleteTables = append(
 					d.mu.versions.obsoleteTables,
@@ -2745,7 +2745,7 @@ func (d *DB) compact1(c *compaction, errChannel chan error) (err error) {
 				// been set yet. So, we directly use the FileNum. Since these
 				// files were generated as compaction outputs, these must be
 				// physical files on disk. This property might not hold once
-				// https://github.com/cockroachdb/pebble/issues/389 is
+				// https://github.com/patrick-ogrady/pebble/issues/389 is
 				// implemented if #389 creates virtual sstables as output files.
 				d.mu.versions.obsoleteTables = append(
 					d.mu.versions.obsoleteTables,

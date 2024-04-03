@@ -12,12 +12,12 @@ import (
 	"sync/atomic"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/remoteobjcat"
-	"github.com/cockroachdb/pebble/objstorage/objstorageprovider/sharedcache"
-	"github.com/cockroachdb/pebble/objstorage/remote"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/objstorage"
+	"github.com/patrick-ogrady/pebble/objstorage/objstorageprovider/remoteobjcat"
+	"github.com/patrick-ogrady/pebble/objstorage/objstorageprovider/sharedcache"
+	"github.com/patrick-ogrady/pebble/objstorage/remote"
 )
 
 // remoteSubsystem contains the provider fields related to remote storage.

@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cockroachdb/pebble"
-	"github.com/cockroachdb/pebble/internal/cache"
+	"github.com/patrick-ogrady/pebble"
+	"github.com/patrick-ogrady/pebble/internal/cache"
 	"github.com/stretchr/testify/require"
 )
 

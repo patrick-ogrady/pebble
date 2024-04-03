@@ -10,14 +10,14 @@ import (
 	"time"
 
 	"github.com/cockroachdb/errors"
-	"github.com/cockroachdb/pebble/internal/base"
-	"github.com/cockroachdb/pebble/internal/invariants"
-	"github.com/cockroachdb/pebble/internal/keyspan"
-	"github.com/cockroachdb/pebble/internal/manifest"
-	"github.com/cockroachdb/pebble/internal/private"
-	"github.com/cockroachdb/pebble/objstorage"
-	"github.com/cockroachdb/pebble/objstorage/remote"
-	"github.com/cockroachdb/pebble/sstable"
+	"github.com/patrick-ogrady/pebble/internal/base"
+	"github.com/patrick-ogrady/pebble/internal/invariants"
+	"github.com/patrick-ogrady/pebble/internal/keyspan"
+	"github.com/patrick-ogrady/pebble/internal/manifest"
+	"github.com/patrick-ogrady/pebble/internal/private"
+	"github.com/patrick-ogrady/pebble/objstorage"
+	"github.com/patrick-ogrady/pebble/objstorage/remote"
+	"github.com/patrick-ogrady/pebble/sstable"
 )
 
 func sstableKeyCompare(userCmp Compare, a, b InternalKey) int {
@@ -1017,7 +1017,7 @@ func ingestTargetLevel(
 // platform-and-FS-agnostic way, ensure that all sstables in the input are
 // properly synced to disk. Opening new file handles and Sync()-ing them
 // does not always guarantee durability; see the discussion here on that:
-// https://github.com/cockroachdb/pebble/pull/835#issuecomment-663075379
+// https://github.com/patrick-ogrady/pebble/pull/835#issuecomment-663075379
 //
 // Ingestion loads each sstable into the lowest level of the LSM which it
 // doesn't overlap (see ingestTargetLevel). If an sstable overlaps a memtable,
@@ -1051,7 +1051,7 @@ func ingestTargetLevel(
 // mutations that get sequence numbers larger than the ingestion sequence
 // number get queued up behind the ingestion waiting for it to complete. This
 // can produce a noticeable hiccup in performance. See
-// https://github.com/cockroachdb/pebble/issues/25 for an idea for how to fix
+// https://github.com/patrick-ogrady/pebble/issues/25 for an idea for how to fix
 // this hiccup.
 func (d *DB) Ingest(paths []string) error {
 	if err := d.closed.Load(); err != nil {
@@ -1430,7 +1430,7 @@ func (d *DB) ingest(
 			// there's an excise span present, we cannot use flushable ingests and need
 			// to wait synchronously. Either remove this caveat by fleshing out
 			// flushable ingest logic to also account for these cases, or remove this
-			// comment. Tracking issue: https://github.com/cockroachdb/pebble/issues/2676
+			// comment. Tracking issue: https://github.com/patrick-ogrady/pebble/issues/2676
 			if mem.flushable == d.mu.mem.mutable {
 				err = d.makeRoomForWrite(nil)
 			}
@@ -1630,7 +1630,7 @@ func (d *DB) excise(
 	// lock; we could grab one currentVersion, release the lock, calculate excised
 	// files, then grab the lock again and recalculate for just the files that
 	// have changed since our previous calculation. Do this optimiaztino as part of
-	// https://github.com/cockroachdb/pebble/issues/2112 .
+	// https://github.com/patrick-ogrady/pebble/issues/2112 .
 	if d.cmp(m.Smallest.UserKey, exciseSpan.Start) < 0 {
 		leftFile := &fileMetadata{
 			Virtual:     true,
